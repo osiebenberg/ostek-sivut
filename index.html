@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Ostek Oy — Työt ensin. Verkkosivut sitten.</title>
+<meta name="description" content="Ostek Oy — LVI-asennukset, huolto ja lämpöpumput Kymenlaaksossa. Uudet verkkosivut ovat työn alla.">
+<meta name="theme-color" content="#23272c">
+<meta name="robots" content="index, follow">
+
+<!-- TARKISTA: vastaako sivusto osoitteessa ostekoy.com vai www.ostekoy.com.
+     Tämän rivin sekä og:url- ja og:image-rivien on osoitettava samaan muotoon
+     kuin se osoite jonka selain lopulta näyttää. -->
+<link rel="canonical" href="https://ostekoy.com/">
+
+<!-- Open Graph / sosiaalinen jako -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:site_name" content="Ostek Oy">
+<meta property="og:title" content="Ostek Oy — Työt ensin. Verkkosivut sitten.">
+<meta property="og:description" content="LVI-asennukset, huolto ja lämpöpumput Kymenlaaksossa. Uudet verkkosivut ovat työn alla.">
+<meta property="og:url" content="https://ostekoy.com/">
+<!-- Jakokuva. Vaatii että ostek-og.png on ladattu sivuston juureen ja että
+     osoite alla on oikea — Facebook, WhatsApp ja LinkedIn vaativat
+     täydellisen https-osoitteen, suhteellinen polku ei kelpaa. -->
+<meta property="og:image" content="https://ostekoy.com/ostek-og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ostek Oy — Työt ensin. Verkkosivut sitten.">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Aloitusanimaation kytkin. Ajetaan ennen ensimmäistä piirtoa, jotta
+     logo ei ehdi vilahtaa lopullisella paikallaan. Animaatio ohitetaan jos
+     käyttäjä on pyytänyt liikkeen vähentämistä tai on jo nähnyt sen tässä
+     selainistunnossa. Ilman JavaScriptiä sivu näkyy suoraan valmiina. -->
+<script>
+(function(){
+  try{
+    var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var seen = false;
+    try{ seen = sessionStorage.getItem('ostek-intro') === '1'; }catch(e){}
+    if(!reduce && !seen){
+      var r = document.documentElement;
+      r.className += ' intro-on';
+      r.style.setProperty('--intro','1550ms');
+    }
+  }catch(e){}
+})();
+</script>
+
+<!-- Favicon inline-SVG:nä — ei ulkoista latausta -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2028.0%2028.0%22%3E%3Crect%20width=%2228.0%22%20height=%2228.0%22%20rx=%223%22%20fill=%22%2323272c%22/%3E%3Cg%20transform=%22translate(-126.0,-236.9)%22%20fill=%22%23e8e5e0%22%3E%3Cuse%20href=%22%23O%22%20transform=%22matrix(20.5437,0,0,-18.1575,134.8174,263.2561)%22/%3E%3Cpath%20transform=%22matrix(1,0,0,-1,127.8968,263.43864)%22%20d=%22M0%200C.804%207.264%203.83%2013.882%209.924%2018.129%2014.797%2021.526%2020.842%2023.003%2026.593%2023.513%2029.697%2023.788%2033.055%2023.796%2035.881%2023.645%2039.375%2023.458%2041.909%2023.181%2045.289%2022.682%2051.007%2021.839%2056.565%2020.625%2062.369%2019.054%2064.499%2018.478%2066.464%2017.905%2068.862%2017.143%2070.118%2016.744%2071.369%2016.331%2072.611%2015.891%2073.672%2015.516%2075.035%2015.384%2076.138%2015.633%2076.977%2015.822%2077.112%2016.253%2076.207%2016.574%2067.211%2019.756%2057.839%2022.087%2048.425%2023.603%2041.152%2024.775%2033.751%2025.395%2026.385%2025.004%2019.85%2024.657%2013.146%2023.433%207.372%2020.223-.089%2016.076-4.062%208.723-4.987%20.366-5.087-.544-.113-1.02%200%200%22/%3E%3C/g%3E%3Cdefs%3E%3Cpath%20id=%22O%22%20d=%22M.18399048%20.71972659C.11199951%20.71972659%20.053985597%20.66171267%20.053985597%20.5897217V.12997437C.053985597%20.057998659%20.11199951%200%20.18399048%200H.6439972C.71598818%200%20.7739868%20.057998659%20.7739868%20.12997437V.5897217C.7739868%20.66171267%20.71598818%20.71972659%20.6439972%20.71972659H.18399048M.18399048%20.10798645C.17199707%20.10798645%20.1619873%20.11798096%20.1619873%20.12997437V.5897217C.1619873%20.6017151%20.17199707%20.61172488%20.18399048%20.61172488H.6439972C.6559906%20.61172488%20.66600039%20.6017151%20.66600039%20.5897217V.12997437C.66600039%20.11798096%20.6559906%20.10798645%20.6439972%20.10798645H.18399048Z%22/%3E%3C/defs%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2028.0%2028.0%22%3E%3Crect%20width=%2228.0%22%20height=%2228.0%22%20rx=%223%22%20fill=%22%2323272c%22/%3E%3Cg%20transform=%22translate(-126.0,-236.9)%22%20fill=%22%23e8e5e0%22%3E%3Cuse%20href=%22%23O%22%20transform=%22matrix(20.5437,0,0,-18.1575,134.8174,263.2561)%22/%3E%3Cpath%20transform=%22matrix(1,0,0,-1,127.8968,263.43864)%22%20d=%22M0%200C.804%207.264%203.83%2013.882%209.924%2018.129%2014.797%2021.526%2020.842%2023.003%2026.593%2023.513%2029.697%2023.788%2033.055%2023.796%2035.881%2023.645%2039.375%2023.458%2041.909%2023.181%2045.289%2022.682%2051.007%2021.839%2056.565%2020.625%2062.369%2019.054%2064.499%2018.478%2066.464%2017.905%2068.862%2017.143%2070.118%2016.744%2071.369%2016.331%2072.611%2015.891%2073.672%2015.516%2075.035%2015.384%2076.138%2015.633%2076.977%2015.822%2077.112%2016.253%2076.207%2016.574%2067.211%2019.756%2057.839%2022.087%2048.425%2023.603%2041.152%2024.775%2033.751%2025.395%2026.385%2025.004%2019.85%2024.657%2013.146%2023.433%207.372%2020.223-.089%2016.076-4.062%208.723-4.987%20.366-5.087-.544-.113-1.02%200%200%22/%3E%3C/g%3E%3Cdefs%3E%3Cpath%20id=%22O%22%20d=%22M.18399048%20.71972659C.11199951%20.71972659%20.053985597%20.66171267%20.053985597%20.5897217V.12997437C.053985597%20.057998659%20.11199951%200%20.18399048%200H.6439972C.71598818%200%20.7739868%20.057998659%20.7739868%20.12997437V.5897217C.7739868%20.66171267%20.71598818%20.71972659%20.6439972%20.71972659H.18399048M.18399048%20.10798645C.17199707%20.10798645%20.1619873%20.11798096%20.1619873%20.12997437V.5897217C.1619873%20.6017151%20.17199707%20.61172488%20.18399048%20.61172488H.6439972C.6559906%20.61172488%20.66600039%20.6017151%20.66600039%20.5897217V.12997437C.66600039%20.11798096%20.6559906%20.10798645%20.6439972%20.10798645H.18399048Z%22/%3E%3C/defs%3E%3C/svg%3E">
+
+<style>
+/* ==========================================================================
+   OSTEK OY — väliaikainen etusivu
+   Yksi tiedosto, ei riippuvuuksia, ei ulkoisia latauksia.
+   Muotoilun perusarvot on koottu alle :root-lohkoon.
+   ========================================================================== */
+
+:root{
+  /* Pinnat — vaaleaa grafiittia */
+  --bg:            #23272c;
+  --bg-deep:       #1c1f23;
+  --bg-lift:       #2e3339;   /* pehmeän valon vaalein kohta */
+
+  /* Typografia */
+  --ink:           #e8e5e0;   /* luonnonvalkoinen — kontrasti 12.0:1 */
+  --ink-dim:       #9aa0a6;   /* teräksenharmaa — 5.7:1 */
+  --ink-faint:     #949aa1;   /* pienet selitetekstit — 5.3:1 (WCAG AA) */
+
+  /* Viivat — vaaleammalla taustalla tarvitaan hieman enemmän voimaa */
+  --line:          rgba(232,229,224,.10);
+  --line-strong:   rgba(232,229,224,.20);
+
+  /* Korostus — kupari, käytetään säästeliäästi */
+  --accent:        #b87333;
+  --accent-bright: #d1904f;   /* kontrastia varten tekstissä */
+
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --pad: clamp(1.25rem, 4vw, 4rem);
+  --ease: cubic-bezier(.22,.61,.36,1);
+}
+
+*,*::before,*::after{ box-sizing:border-box; }
+
+html{ -webkit-text-size-adjust:100%; }
+
+body{
+  margin:0;
+  min-height:100svh;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--font);
+  font-size:16px;
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+}
+
+a{ color:inherit; }
+
+.sr-only{
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0;
+}
+
+:focus-visible{
+  outline:2px solid var(--accent-bright);
+  outline-offset:4px;
+  border-radius:2px;
+}
+
+/* --------------------------------------------------------------------------
+   Tausta: hidas tekninen ruudukko + vinjetti
+   -------------------------------------------------------------------------- */
+.backdrop{
+  position:fixed; inset:0; z-index:0; pointer-events:none;
+  background:
+    radial-gradient(120% 90% at 78% 8%, var(--bg-lift) 0%, var(--bg) 48%, var(--bg-deep) 100%);
+}
+
+/* Hienovarainen kuparinen valo oikeassa yläkulmassa. Ainoa taustaelementti
+   ruudukon poiston jälkeen — antaa syvyyttä ilman teknistä sävyä. */
+.backdrop__glow{
+  position:absolute; top:-22vh; right:-12vw;
+  width:min(72vw,860px); aspect-ratio:1;
+  background:radial-gradient(circle, rgba(184,115,51,.13) 0%, rgba(184,115,51,0) 70%);
+  transition:transform 1.2s var(--ease);
+}
+
+/* Kehyksen kulmamerkit — piirustusmainen yksityiskohta */
+.corners{ position:fixed; inset:0; z-index:1; pointer-events:none; }
+.corners span{
+  position:absolute; width:14px; height:14px;
+  border:0 solid var(--line-strong);
+}
+.corners span:nth-child(1){ top:var(--pad); left:var(--pad);  border-top-width:1px; border-left-width:1px; }
+.corners span:nth-child(2){ top:var(--pad); right:var(--pad); border-top-width:1px; border-right-width:1px; }
+.corners span:nth-child(3){ bottom:var(--pad); left:var(--pad);  border-bottom-width:1px; border-left-width:1px; }
+.corners span:nth-child(4){ bottom:var(--pad); right:var(--pad); border-bottom-width:1px; border-right-width:1px; }
+
+/* --------------------------------------------------------------------------
+   Rakenne
+   -------------------------------------------------------------------------- */
+.page{
+  position:relative; z-index:2;
+  min-height:100svh;
+  padding:calc(var(--pad) + 1rem) calc(var(--pad) + 1.75rem);
+  display:flex; flex-direction:column;
+  gap:clamp(1.6rem,4.6vh,2.9rem);
+}
+
+/* Yläpalkki ---------------------------------------------------------------- */
+.top{
+  display:flex; align-items:flex-start; justify-content:space-between;
+  gap:1.5rem; flex-wrap:wrap;
+}
+
+/* Logo. SVG on upotettu sivulle, jotta sen osia voi animoida erikseen
+   eikä erillistä tiedostolatausta tarvita. Väri tulee color-arvosta. */
+.brand{
+  display:block;
+  line-height:0;
+  color:var(--ink);
+}
+.logo{
+  display:block;
+  width:clamp(140px,15.5vw,204px);
+  height:auto;
+}
+
+.status{
+  display:inline-flex; align-items:center; gap:.65rem;
+  font-size:.8125rem;
+  letter-spacing:.01em;
+  color:var(--ink-dim);
+  padding:.4rem 0;
+  white-space:nowrap;
+}
+.status__dot{
+  width:6px; height:6px; border-radius:50%;
+  background:var(--accent);
+  box-shadow:0 0 0 0 rgba(184,115,51,.55);
+  animation:pulse 3.2s var(--ease) infinite;
+  flex:0 0 auto;
+}
+@keyframes pulse{
+  0%   { box-shadow:0 0 0 0 rgba(184,115,51,.5); }
+  70%  { box-shadow:0 0 0 7px rgba(184,115,51,0); }
+  100% { box-shadow:0 0 0 0 rgba(184,115,51,0); }
+}
+
+/* Pääsisältö --------------------------------------------------------------- */
+.main{
+  flex:1 1 auto;
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  align-content:center;
+  gap:clamp(1.75rem,4vh,2.75rem);
+}
+
+.eyebrow{
+  margin:0 0 1.4rem;
+  font-size:.875rem;
+  letter-spacing:.01em;
+  color:var(--ink-faint);
+  display:flex; align-items:center; gap:1rem;
+}
+.eyebrow::after{
+  content:""; height:1px; flex:1 1 auto; max-width:160px;
+  background:var(--line-strong);
+}
+
+.headline{
+  margin:0;
+  font-size:clamp(2.9rem,8.6vw,9.5rem);
+  line-height:.94;
+  letter-spacing:-.035em;
+  font-weight:600;
+}
+.headline .row{ display:block; overflow:hidden; }
+.headline .row > span{ display:block; }
+.headline .accent{ color:var(--accent-bright); }
+
+/* Otsikon jatkolause — pienempi, kuparilla */
+.subhead{
+  margin:.7rem 0 0;
+  font-size:clamp(1.375rem,3.1vw,2.75rem);
+  line-height:1.05;
+  letter-spacing:-.02em;
+  font-weight:500;
+  color:var(--accent-bright);
+}
+
+.lede{
+  margin:0;
+  max-width:38ch;
+  font-size:clamp(1rem,1.35vw,1.1875rem);
+  color:var(--ink-dim);
+}
+
+/* Toimialat ---------------------------------------------------------------- */
+.fields{
+  list-style:none; margin:0; padding:0;
+  display:flex; flex-wrap:wrap;
+  gap:0 clamp(2rem,5vw,5.5rem);
+  /* Viivat kulkevat koko leveydeltä, jotta rivi asettuu samaan
+     ruudukkoon alatunnisteen kanssa. */
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+.fields li{
+  flex:0 1 auto;
+  padding:1rem 0;
+  display:flex; align-items:flex-start; gap:.7rem;
+  font-size:.9375rem;
+}
+/* Kuparinen piste numeroinnin tilalla */
+.fields .dot{
+  flex:0 0 auto;
+  width:6px; height:6px; border-radius:50%;
+  background:var(--accent-bright);
+  margin-top:.58em;
+}
+.fields .name{
+  letter-spacing:.01em;
+  color:var(--ink);
+}
+
+/* Yhteystiedot ------------------------------------------------------------- */
+.contact{
+  display:flex; flex-wrap:wrap;
+  gap:.75rem 3.5rem;
+}
+.contact__item{
+  position:relative;
+  display:block;
+  text-decoration:none;
+  padding:.55rem 0 .75rem;
+  transition:color .25s var(--ease);
+}
+.contact__label{
+  display:block;
+  font-size:.8125rem; letter-spacing:.01em;
+  color:var(--ink-faint);
+  margin-bottom:.35rem;
+  transition:color .25s var(--ease);
+}
+.contact__value{
+  display:block;
+  font-size:clamp(1.0625rem,1.7vw,1.375rem);
+  letter-spacing:-.005em;
+}
+.contact__item::after{
+  content:"";
+  position:absolute; left:0; bottom:0;
+  width:100%; height:1px;
+  background:var(--accent);
+  transform:scaleX(0); transform-origin:left;
+  transition:transform .4s var(--ease);
+}
+.contact__item:hover::after,
+.contact__item:focus-visible::after{ transform:scaleX(1); }
+.contact__item:hover .contact__label,
+.contact__item:focus-visible .contact__label{ color:var(--accent-bright); }
+
+/* Alatunniste -------------------------------------------------------------- */
+.foot{
+  display:flex; flex-wrap:wrap; align-items:baseline;
+  justify-content:space-between; gap:.5rem 2rem;
+  padding-top:1.4rem;
+  border-top:1px solid var(--line);
+  font-size:.8125rem;
+  letter-spacing:.01em;
+  color:var(--ink-faint);
+}
+.foot p{ margin:0; }
+.foot .sep{ color:var(--line-strong); padding:0 .55rem; }
+
+/* Kapeilla näytöillä otsikko skaalataan sarakkeen leveyden mukaan,
+   jottei pisin sana "Rakennamme" leikkaudu. */
+@media (max-width:560px){
+  .headline{ font-size:clamp(2.3rem,13.8vw,4.25rem); }
+
+  /* Silmäilyrivi mahtuu yhdelle riville myös puhelimessa */
+  .eyebrow{ font-size:.8125rem; gap:.75rem; }
+
+  /* Toimialat allekkain kapealla näytöllä */
+  .fields{ flex-direction:column; gap:0; }
+  .fields li{ padding:.85rem 0; }
+  .fields li + li{ border-top:1px solid var(--line); }
+
+  /* Yhteystiedot omille riveilleen — isommat kosketusalueet */
+  .contact{ flex-direction:column; gap:0; }
+  .contact__item{ padding:.9rem 0 1rem; border-bottom:1px solid var(--line); }
+}
+
+/* --------------------------------------------------------------------------
+   Työpöytä: epäsymmetrinen sommittelu ja reunayksityiskohdat
+   -------------------------------------------------------------------------- */
+@media (min-width:900px){
+  .page{ padding-inline:calc(var(--pad) + 4.5rem); }
+
+  .main{
+    grid-template-columns:minmax(0,8fr) minmax(0,4fr);
+    column-gap:clamp(2rem,6vw,7rem);
+    row-gap:clamp(1.6rem,4.2vh,2.7rem);
+    align-items:end;
+  }
+  .main__head{ grid-column:1 / 2; }
+  .lede{ grid-column:2 / 3; padding-bottom:.75rem; }
+  .fields{ grid-column:1 / 3; }
+  .contact{ grid-column:1 / 3; }
+}
+
+/* --------------------------------------------------------------------------
+   Sisääntuloanimaatiot — hillityt, porrastetut.
+   --intro on 0 normaalisti ja ~1,5 s kun aloitusanimaatio pyörii, jolloin
+   sisältö tulee esiin vasta kun logo on lentänyt paikalleen.
+   -------------------------------------------------------------------------- */
+.reveal{
+  opacity:0;
+  transform:translateY(14px);
+  animation:rise .9s var(--ease) forwards;
+  animation-delay:calc(var(--d,0ms) + var(--intro,0ms));
+}
+.headline .row > span{
+  transform:translateY(105%);
+  animation:lift 1s var(--ease) forwards;
+  animation-delay:calc(var(--d,0ms) + var(--intro,0ms));
+}
+
+/* --------------------------------------------------------------------------
+   Aloitusanimaatio
+   Logo piirtyy ruudun keskellä ja liukuu sitten omalle paikalleen
+   yläpalkkiin. Vain yksi logoelementti — sitä siirretään transformilla,
+   joten mitään ei kahdenneta.
+   -------------------------------------------------------------------------- */
+.intro{ display:none; }
+
+.intro-on .intro{
+  display:block;
+  position:fixed; inset:0; z-index:50;
+  background:var(--bg);
+  pointer-events:none;
+}
+.intro-on.intro-fade .intro{ opacity:0; transition:opacity .8s var(--ease); }
+.intro-on.intro-done .intro{ display:none; }
+
+/* Sisältökerros nostetaan peittolevyn päälle animaation ajaksi, jotta logo
+   näkyy sen päällä. Muu sisältö on tässä vaiheessa vielä läpinäkyvää
+   (.reveal-animaatiot alkavat vasta --intro-viiveen jälkeen), joten
+   käytännössä peittolevyn päällä näkyy vain logo. */
+.intro-on .page{ z-index:60; }
+.intro-on.intro-done .page{ z-index:2; }
+
+.intro-on .brand{ opacity:0; }
+.intro-on.intro-ready .brand{ opacity:1; }
+
+/* Logon osien lähtötilat */
+.intro-on:not(.intro-done) .lg-l{ opacity:0; transform:translateY(2.4px); }
+.intro-on:not(.intro-done) .lg-arc{ clip-path:inset(0 100% 0 0); }
+.intro-on:not(.intro-done) .lg-oy{ opacity:0; }
+
+/* 1) kirjaimet nousevat esiin yksi kerrallaan */
+.intro-play .lg-l{ animation:lgLetter .5s var(--ease) forwards; }
+.intro-play .lg-l:nth-child(1){ animation-delay:.10s; }
+.intro-play .lg-l:nth-child(2){ animation-delay:.17s; }
+.intro-play .lg-l:nth-child(3){ animation-delay:.24s; }
+.intro-play .lg-l:nth-child(4){ animation-delay:.31s; }
+.intro-play .lg-l:nth-child(5){ animation-delay:.38s; }
+
+/* 2) kaari piirtyy vasemmalta oikealle */
+.intro-play .lg-arc{ animation:lgArc .8s cubic-bezier(.3,.72,.28,1) .46s forwards; }
+
+/* 3) "oy" häivähtää esiin viimeisenä */
+.intro-play .lg-oy{ animation:lgFade .45s var(--ease) 1.02s forwards; }
+
+@keyframes lgLetter{ to{ opacity:1; transform:none; } }
+@keyframes lgArc{ to{ clip-path:inset(0 0 0 0); } }
+@keyframes lgFade{ to{ opacity:1; } }
+@keyframes rise{ to{ opacity:1; transform:none; } }
+@keyframes lift{ to{ transform:none; } }
+
+/* Kevyt kohdistinparallaksi (JS asettaa muuttujat) */
+.parallax{
+  transform:translate3d(var(--px,0px), var(--py,0px), 0);
+  transition:transform .9s var(--ease);
+}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.001ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.001ms !important;
+  }
+  .reveal{ opacity:1; transform:none; }
+  .headline .row > span{ transform:none; }
+  .parallax{ transform:none; }
+  /* Aloitusanimaatio ohitetaan kokonaan */
+  .intro{ display:none !important; }
+  .brand{ opacity:1 !important; }
+  .lg-l, .lg-oy{ opacity:1 !important; transform:none !important; }
+  .lg-arc{ clip-path:none !important; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="intro" id="intro" aria-hidden="true"></div>
+
+<div class="backdrop" aria-hidden="true">
+  <div class="backdrop__glow parallax" id="glow"></div>
+</div>
+
+<div class="corners" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+
+<div class="page">
+
+  <header class="top">
+    <!-- =====================================================================
+         LOGO (Ostek Oy:n oma tunnus, vektorina Illustrator-tiedostosta)
+         Kokoa säädetään CSS:n .logo-säännöstä, väriä .brand-säännön
+         color-arvosta. Kirjaimet, kaari ja "oy" on eroteltu omiksi
+         ryhmikseen aloitusanimaatiota varten.
+         ===================================================================== -->
+    <div class="brand" id="brand">
+      <svg class="logo" viewBox="0 0 105.72 26.52" fill="currentColor" role="img" aria-labelledby="ostek-logo-title" xmlns="http://www.w3.org/2000/svg">
+      <title id="ostek-logo-title">Ostek Oy</title>
+      <defs>
+      <path id="font_0_3" d="M.18399048 .71972659C.11199951 .71972659 .053985597 .66171267 .053985597 .5897217V.12997437C.053985597 .057998659 .11199951 0 .18399048 0H.6439972C.71598818 0 .7739868 .057998659 .7739868 .12997437V.5897217C.7739868 .66171267 .71598818 .71972659 .6439972 .71972659H.18399048M.18399048 .10798645C.17199707 .10798645 .1619873 .11798096 .1619873 .12997437V.5897217C.1619873 .6017151 .17199707 .61172488 .18399048 .61172488H.6439972C.6559906 .61172488 .66600039 .6017151 .66600039 .5897217V.12997437C.66600039 .11798096 .6559906 .10798645 .6439972 .10798645H.18399048Z"/>
+      <path id="font_0_4" d="M.7709961 .5897217C.7709961 .66171267 .71299746 .71972659 .6409912 .71972659H.18099976C.10899353 .71972659 .050994874 .66171267 .050994874 .5897217V.43566896C.050994874 .36366273 .10899353 .30566407 .18099976 .30566407H.6409912C.6529999 .30566407 .6629944 .29566957 .6629944 .2836914V.1299591C.6629944 .11798096 .6529999 .10798645 .6409912 .10798645H.18099976C.16899109 .10798645 .15899658 .11798096 .15899658 .1299591V.17199707H.050994874V.12998963C.050994874 .057998659 .10899353 0 .18099976 0H.6409912C.71299746 0 .7709961 .057998659 .7709961 .12998963V.28370667C.7709961 .35565187 .71299746 .4136505 .6409912 .4136505H.18099976C.16899109 .4136505 .15899658 .42366029 .15899658 .43566896V.5897064C.15899658 .6017151 .16899109 .61172488 .18099976 .61172488H.6409912C.6529999 .61172488 .6629944 .6017151 .6629944 .5897064V.54771426H.7709961V.5897217Z"/>
+      <path id="font_0_5" d="M.019989014 .71972659V.61172488H.32598878V0H.43399049V.61172488H.73999026V.71972659H.019989014Z"/>
+      <path id="font_0_1" d="M.71798709 .71972659H.057998659V0H.71798709V.10798645H.1659851V.30566407H.6100006V.4136505H.1659851V.61172488H.71798709V.71972659Z"/>
+      <path id="font_0_2" d="M.621994 .71972659 .36499024 .4136505H.16499329V.71972659H.056991579V0H.16499329V.30566407H.36499024L.621994 0H.75V.014968872L.46099855 .35964967 .75 .7047119V.71972659H.621994Z"/>
+      <path id="font_0_6" d="M.18099976 .5800781C.10899353 .5800781 .050994874 .5220642 .050994874 .45005799V.12998963C.050994874 .057998659 .10899353 0 .18099976 0H.5109863C.58299258 0 .6409912 .057998659 .6409912 .12998963V.45005799C.6409912 .5220642 .58299258 .5800781 .5109863 .5800781H.18099976M.5109863 .47207643C.522995 .47207643 .5329895 .46206666 .5329895 .45005799V.12998963C.5329895 .117996219 .522995 .10798645 .5109863 .10798645H.18099976C.16899109 .10798645 .15899658 .117996219 .15899658 .12998963V.45005799C.15899658 .46206666 .16899109 .47207643 .18099976 .47207643H.5109863Z"/>
+      <path id="font_0_7" d="M.6319885 .22203064V.578125H.5239868V.13000489C.5239868 .117996219 .5139923 .10798645 .5019989 .10798645H.17199707C.1599884 .10798645 .1499939 .117996219 .1499939 .13000489V.578125H.041992189V.13000489C.041992189 .057998659 .099990848 0 .17199707 0H.5239868V-.10006714C.5239868-.112075809 .5139923-.12207031 .5019989-.12207031H.14399719V-.23007202H.5019989C.57398989-.23007202 .6319885-.17207337 .6319885-.10006714V.22001648C.6319885 .22001648 .6319885 .22102356 .6319885 .22203064Z"/>
+      </defs>
+      <g class="lg-letters" transform="translate(-122.58,-237.78)">
+        <g class="lg-l"><use href="#font_0_3" transform="matrix(20.5437,0,0,-18.1575,134.8174,263.2561)"/></g>
+        <g class="lg-l"><use href="#font_0_4" transform="matrix(20.5437,0,0,-18.1575,151.82758,263.2561)"/></g>
+        <g class="lg-l"><use href="#font_0_5" transform="matrix(20.5437,0,0,-18.1575,168.7145,263.2561)"/></g>
+        <g class="lg-l"><use href="#font_0_1" transform="matrix(20.5437,0,0,-18.1575,184.30716,263.2561)"/></g>
+        <g class="lg-l"><use href="#font_0_2" transform="matrix(20.5437,0,0,-18.1575,200.04364,263.2561)"/></g>
+      </g>
+      <g class="lg-arc"><g transform="translate(-122.58,-237.78)"><path transform="matrix(1,0,0,-1,127.8968,263.43864)" d="M0 0C.804 7.264 3.83 13.882 9.924 18.129 14.797 21.526 20.842 23.003 26.593 23.513 29.697 23.788 33.055 23.796 35.881 23.645 39.375 23.458 41.909 23.181 45.289 22.682 51.007 21.839 56.565 20.625 62.369 19.054 64.499 18.478 66.464 17.905 68.862 17.143 70.118 16.744 71.369 16.331 72.611 15.891 73.672 15.516 75.035 15.384 76.138 15.633 76.977 15.822 77.112 16.253 76.207 16.574 67.211 19.756 57.839 22.087 48.425 23.603 41.152 24.775 33.751 25.395 26.385 25.004 19.85 24.657 13.146 23.433 7.372 20.223-.089 16.076-4.062 8.723-4.987 .366-5.087-.544-.113-1.02 0 0"/></g></g>
+      <g class="lg-oy" transform="translate(-122.58,-237.78)">
+        <use href="#font_0_6" transform="matrix(9.2714,0,0,-10.2814,215.4507,258.99693)"/>
+        <use href="#font_0_7" transform="matrix(9.2714,0,0,-10.2814,221.86652,258.99693)"/>
+      </g>
+    </svg>
+    </div>
+    <p class="status reveal" style="--d:160ms">
+      <span class="status__dot" aria-hidden="true"></span>
+      Sivustoa uudistetaan
+    </p>
+  </header>
+
+  <main class="main">
+
+    <div class="main__head">
+      <p class="eyebrow reveal" style="--d:240ms">LVI ja lämpöpumput — Kymenlaakso</p>
+      <h1 class="headline">
+        <span class="sr-only">Ostek Oy — Työt ensin.</span>
+        <span class="row" aria-hidden="true"><span style="--d:320ms">Työt ensin.</span></span>
+      </h1>
+      <p class="subhead reveal" style="--d:520ms">Verkkosivut sitten.</p>
+    </div>
+
+    <p class="lede reveal" style="--d:560ms">
+      Uudet verkkosivut ovat työn alla.
+      Yhteydenotot puhelimitse tai sähköpostilla.
+    </p>
+
+    <h2 class="sr-only">Toimialat</h2>
+    <ul class="fields reveal" style="--d:660ms">
+      <li><span class="dot" aria-hidden="true"></span><span class="name">LVI-asennukset ja huolto</span></li>
+      <li><span class="dot" aria-hidden="true"></span><span class="name">Lämpöpumput</span></li>
+    </ul>
+
+    <!-- =====================================================================
+         YHTEYSTIEDOT — MUOKKAA VAIN TÄTÄ LOHKOA
+         Muista päivittää sekä href että näkyvä teksti.
+         Puhelin: href="tel:" ilman välilyöntejä, kansainvälisessä muodossa.
+         ===================================================================== -->
+    <h2 class="sr-only">Yhteystiedot</h2>
+    <div class="contact reveal" style="--d:760ms">
+
+      <a class="contact__item" href="tel:+358503509353">
+        <span class="contact__label">Puhelin</span>
+        <span class="contact__value">+358 50 350 9353</span>
+      </a>
+
+      <a class="contact__item" href="mailto:info@ostekoy.com">
+        <span class="contact__label">Sähköposti</span>
+        <span class="contact__value">info@ostekoy.com</span>
+      </a>
+
+    </div>
+    <!-- ============== YHTEYSTIETOLOHKO PÄÄTTYY ============================= -->
+
+  </main>
+
+  <footer class="foot reveal" style="--d:860ms">
+    <p>
+      Ostek Oy<span class="sep">/</span>Y-tunnus Y-3363387-5
+    </p>
+    <p>&copy; 2026 Ostek Oy</p>
+  </footer>
+
+</div>
+
+<!-- Rakenteinen data hakukoneille. Yhteystiedot on tarkoituksella jätetty pois,
+     jotta puhelin ja sähköposti ovat vain yhdessä paikassa (yhteystietolohko). -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Ostek Oy",
+  "url": "https://ostekoy.com/",
+  "description": "LVI-asennukset ja huolto sekä lämpöpumput Kymenlaaksossa.",
+  "identifier": "Y-3363387-5",
+  "address": { "@type": "PostalAddress", "addressRegion": "Kymenlaakso", "addressCountry": "FI" },
+  "areaServed": { "@type": "AdministrativeArea", "name": "Kymenlaakso" }
+}
+</script>
+
+<script>
+/* --------------------------------------------------------------------------
+   Aloitusanimaation ohjaus.
+
+   Idea: logoa on vain yksi kappale, ja se on jo lopullisella paikallaan
+   yläpalkissa. Mitataan sen paikka, siirretään se transformilla ruudun
+   keskelle isona, annetaan logon osien piirtyä, ja lopuksi poistetaan
+   transform — jolloin selain animoi logon takaisin omalle paikalleen.
+   Tämä on ns. FLIP-tekniikka: se liikuttaa vain transformia, joten
+   selain hoitaa animaation näytönohjaimella eikä sivu nyki.
+   -------------------------------------------------------------------------- */
+(function () {
+  var root = document.documentElement;
+  if (!root.classList.contains('intro-on')) return;
+
+  var brand = document.getElementById('brand');
+  if (!brand) { root.classList.remove('intro-on'); return; }
+
+  // 1. Mitataan logon lopullinen paikka ja lasketaan siirto keskelle.
+  var r  = brand.getBoundingClientRect();
+  var vw = window.innerWidth, vh = window.innerHeight;
+  var targetWidth = Math.min(vw * 0.58, 520, vw - 56);
+  var k  = targetWidth / r.width;
+
+  brand.style.transformOrigin = '0 0';
+  brand.style.transform =
+    'translate(' + ((vw - r.width * k) / 2 - r.left) + 'px,' +
+                   ((vh - r.height * k) / 2 - r.top) + 'px) scale(' + k + ')';
+
+  // 2. Käynnistetään logon osien animaatiot ja tehdään logo näkyväksi.
+  root.classList.add('intro-ready', 'intro-play');
+
+  // 3. Kun logo on piirtynyt, se liukuu omalle paikalleen ja peittolevy häipyy.
+  setTimeout(function () {
+    brand.style.transition = 'transform .95s cubic-bezier(.65,0,.2,1)';
+    brand.style.transform  = '';
+    root.classList.add('intro-fade');
+
+    setTimeout(function () {
+      root.classList.add('intro-done');
+      brand.removeAttribute('style');
+      try { sessionStorage.setItem('ostek-intro', '1'); } catch (e) {}
+    }, 1000);
+  }, 1450);
+})();
+
+/* --------------------------------------------------------------------------
+   Erittäin hillitty kohdistinparallaksi. Vain työpöydällä, vain jos
+   käyttäjä ei ole pyytänyt liikkeen vähentämistä. Ei muuta toiminnallisuutta.
+   -------------------------------------------------------------------------- */
+(function () {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+  var fine   = window.matchMedia('(hover: hover) and (pointer: fine)');
+  if (reduce.matches || !fine.matches) return;
+
+  var layers = [
+    { el: document.getElementById('glow'), depth: 22 }
+  ].filter(function (l) { return l.el; });
+
+  var frame = null;
+
+  window.addEventListener('pointermove', function (e) {
+    if (frame) return;
+    frame = requestAnimationFrame(function () {
+      frame = null;
+      var x = (e.clientX / window.innerWidth  - 0.5);
+      var y = (e.clientY / window.innerHeight - 0.5);
+      layers.forEach(function (l) {
+        l.el.style.setProperty('--px', (x * l.depth).toFixed(2) + 'px');
+        l.el.style.setProperty('--py', (y * l.depth).toFixed(2) + 'px');
+      });
+    });
+  }, { passive: true });
+})();
+</script>
+
+</body>
+</html>
